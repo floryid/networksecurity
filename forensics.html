@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forensics</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar is-dark">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="index.html">Cybersecurity Learning</a>
+      <span class="navbar-burger" data-target="navbarMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
+    </div>
+
+    <div id="navbarMenu" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="index.html">Home</a>
+        <a class="navbar-item" href="basics.html">Dasar</a>
+        <a class="navbar-item" href="networking.html">Networking</a>
+        <a class="navbar-item" href="os-security.html">OS Security</a>
+        <a class="navbar-item" href="eth-hacking.html">Ethical Hacking</a>
+        <a class="navbar-item" href="web-security.html">Web Security</a>
+        <a class="navbar-item" href="forensics.html">Forensik</a>
+        <a class="navbar-item" href="malware.html">Malware Analysis</a>
+        <a class="navbar-item" href="resources.html">Certifications & Resources</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <section class="section">
+    <div class="container">
+      <h1 class="title">Digital Forensics</h1>
+      <p class="subtitle">Mengenal dasar-dasar forensik digital dan teknik pengumpulan bukti siber.</p>
+
+      <!-- Pengantar Forensik Digital -->
+      <div class="content">
+        <h2>Pengenalan Forensik Digital</h2>
+        <p>Forensik digital adalah proses investigasi dan analisis sistem komputer untuk menemukan bukti terkait insiden keamanan. Bidang ini melibatkan teknik pengumpulan, penyimpanan, dan analisis data digital secara menyeluruh.</p>
+      </div>
+
+      <!-- Tahapan Forensik Digital -->
+      <div class="content">
+        <h2>Tahapan Forensik Digital</h2>
+        <ul>
+          <li><strong>Identifikasi:</strong> Menentukan sumber bukti yang relevan dan lokasi potensial data yang terkait.</li>
+          <li><strong>Pengumpulan:</strong> Mengamankan dan mengumpulkan data tanpa merusak bukti. Proses ini memerlukan keterampilan teknis dan ketelitian tinggi.</li>
+          <li><strong>Analisis:</strong> Menganalisis data yang dikumpulkan untuk mengidentifikasi pola, log, dan artefak yang relevan dengan insiden.</li>
+          <li><strong>Pelaporan:</strong> Menyusun laporan rinci yang mencakup hasil investigasi serta kesimpulan yang diambil.</li>
+        </ul>
+      </div>
+
+      <!-- Tools untuk Forensik Digital -->
+      <div class="content">
+        <h2>Tools untuk Forensik Digital</h2>
+        <ul>
+          <li><strong>Autopsy:</strong> Alat open-source yang populer untuk melakukan investigasi forensik digital dan analisis data.</li>
+          <li><strong>FTK Imager:</strong> Alat untuk menciptakan salinan forensik dari hard drive dan mengaksesnya tanpa mengubah data asli.</li>
+          <li><strong>Wireshark:</strong> Alat analisis jaringan yang dapat digunakan untuk memeriksa lalu lintas jaringan dan mendeteksi anomali.</li>
+          <li><strong>Volatility:</strong> Alat khusus untuk analisis memori (RAM) yang berguna dalam menyelidiki aktivitas sistem runtime.</li>
+          <li><strong>EnCase:</strong> Platform komersial yang digunakan untuk investigasi siber tingkat lanjut di lingkungan perusahaan.</li>
+        </ul>
+      </div>
+
+      <!-- Tips Praktis untuk Forensik Digital -->
+      <div class="content">
+        <h2>Tips Praktis untuk Forensik Digital</h2>
+        <ul>
+          <li><strong>Pelajari Standar Forensik:</strong> Pahami standar dan prinsip yang berlaku, seperti Chain of Custody untuk melindungi integritas bukti.</li>
+          <li><strong>Gunakan Tools yang Tepat:</strong> Pilih alat yang sesuai dengan kasus dan target analisis.</li>
+          <li><strong>Jaga Integritas Bukti:</strong> Hindari mengubah atau merusak bukti, selalu lakukan pencadangan.</li>
+          <li><strong>Catat Setiap Langkah:</strong> Dokumentasikan setiap langkah selama investigasi untuk referensi dan pelaporan.</li>
+          <li><strong>Rutin Latihan:</strong> Terus praktikkan dan perbarui keterampilan agar terbiasa dengan teknologi dan metode terbaru.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>&copy; 2024 Cybersecurity Learning. All Rights Reserved.</p>
+      <p>
+        <a href="privacy.html">Privacy Policy</a> | 
+        <a href="term.html">Terms of Service</a> | 
+        <a href="contact.html">Contact</a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Navbar Toggle Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+      if (navbarBurgers.length > 0) {
+        navbarBurgers.forEach(el => {
+          el.addEventListener('click', () => {
+            const target = el.dataset.target;
+            const $target = document.getElementById(target);
+            el.classList.toggle('is-active');
+            $target.classList.toggle('is-active');
+          });
+        });
+      }
+    });
+  </script>
+</body>
+</html>

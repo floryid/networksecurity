@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cybersecurity Learning</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar is-dark">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="index.html">Cybersecurity Learning</a>
+      <span class="navbar-burger" data-target="navbarMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
+    </div>
+
+    <div id="navbarMenu" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="index.html">Home</a>
+        <a class="navbar-item" href="about.html">About</a>
+        <a class="navbar-item" href="basics.html">Dasar</a>
+        <a class="navbar-item" href="networking.html">Networking</a>
+        <a class="navbar-item" href="os-security.html">OS Security</a>
+        <a class="navbar-item" href="eth-hacking.html">Ethical Hacking</a>
+        <a class="navbar-item" href="web-security.html">Web Security</a>
+        <a class="navbar-item" href="forensics.html">Forensik</a>
+        <a class="navbar-item" href="malware.html">Malware Analysis</a>
+        <a class="navbar-item" href="resources.html">Certifications & Resources</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero is-primary is-fullheight-with-navbar">
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <h1 class="title">Belajar Cybersecurity dari Dasar hingga Mahir</h1>
+        <p class="subtitle">Panduan lengkap materi, tools, dan praktik keamanan siber.</p>
+        <a href="basics.html" class="button is-link is-large">Mulai Belajar</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>&copy; 2024 Cybersecurity Learning. All Rights Reserved.</p>
+        <p>
+            <a href="privacy.html">Privacy Policy</a> | 
+            <a href="term.html">Terms of Service</a> | 
+            <a href="contact.html">Contact</a>
+        </p>
+    </div>
+  </footer>
+
+  <script>
+    // Navbar toggle for mobile
+    document.addEventListener('DOMContentLoaded', () => {
+      const navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+      if (navbarBurgers.length > 0) {
+        navbarBurgers.forEach(el => {
+          el.addEventListener('click', () => {
+            const target = el.dataset.target;
+            const $target = document.getElementById(target);
+            el.classList.toggle('is-active');
+            $target.classList.toggle('is-active');
+          });
+        });
+      }
+    });
+  </script>
+</body>
+</html>

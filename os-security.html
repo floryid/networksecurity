@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Keamanan Sistem Operasi (OS Security)</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar is-dark">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="index.html">Cybersecurity Learning</a>
+      <span class="navbar-burger" data-target="navbarMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
+    </div>
+
+    <div id="navbarMenu" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="index.html">Home</a>
+        <a class="navbar-item" href="basics.html">Dasar</a>
+        <a class="navbar-item" href="networking.html">Networking</a>
+        <a class="navbar-item" href="os-security.html">OS Security</a>
+        <a class="navbar-item" href="eth-hacking.html">Ethical Hacking</a>
+        <a class="navbar-item" href="web-security.html">Web Security</a>
+        <a class="navbar-item" href="forensics.html">Forensik</a>
+        <a class="navbar-item" href="malware.html">Malware Analysis</a>
+        <a class="navbar-item" href="resources.html">Certifications & Resources</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <section class="section">
+    <div class="container">
+      <h1 class="title">Keamanan Sistem Operasi (OS Security)</h1>
+      <p class="subtitle">Memahami keamanan pada sistem operasi untuk menjaga data dan sistem dari serangan.</p>
+
+      <!-- Pentingnya Keamanan Sistem Operasi -->
+      <div class="content">
+        <h2>Pentingnya Keamanan Sistem Operasi</h2>
+        <p>Sistem operasi adalah dasar dari komputer dan perangkat yang mengelola sumber daya dan menjalankan aplikasi. Oleh karena itu, keamanan OS sangat penting untuk mencegah akses tidak sah, malware, dan ancaman lainnya.</p>
+        <ul>
+          <li><strong>Perlindungan Data:</strong> Menjamin kerahasiaan dan integritas data pengguna.</li>
+          <li><strong>Pencegahan Serangan:</strong> Mengurangi risiko ancaman dari virus, malware, dan aktivitas berbahaya lainnya.</li>
+          <li><strong>Mendukung Keamanan Jaringan:</strong> Mengelola akses dan kontrol di seluruh jaringan komputer.</li>
+        </ul>
+      </div>
+
+      <!-- Jenis Keamanan OS -->
+      <div class="content">
+        <h2>Jenis Keamanan OS</h2>
+        <ul>
+          <li><strong>Antivirus dan Anti-malware:</strong> Aplikasi yang melindungi terhadap perangkat lunak berbahaya.</li>
+          <li><strong>Firewall:</strong> Alat yang memantau dan mengendalikan lalu lintas masuk dan keluar.</li>
+          <li><strong>Patch Management:</strong> Pembaruan rutin untuk menutup celah keamanan dalam sistem.</li>
+          <li><strong>Access Control:</strong> Mengatur hak akses pengguna ke file dan sistem.</li>
+          <li><strong>Enkripsi Data:</strong> Mengamankan data dengan mengubahnya menjadi format yang hanya dapat dibaca oleh pihak yang memiliki kunci enkripsi.</li>
+        </ul>
+      </div>
+
+      <!-- Sistem Operasi yang Umum dalam Cybersecurity -->
+      <div class="content">
+        <h2>Sistem Operasi yang Umum dalam Cybersecurity</h2>
+        <ul>
+          <li><strong>Kali Linux:</strong> Sistem operasi berbasis Linux yang digunakan khusus untuk keamanan jaringan dan pengujian penetrasi.</li>
+          <li><strong>Windows:</strong> Digunakan secara luas dan menjadi target serangan umum, sehingga pemahaman keamanan Windows sangat penting.</li>
+          <li><strong>Ubuntu:</strong> Distribusi Linux yang sering digunakan oleh pengembang dan profesional IT untuk server dan desktop.</li>
+        </ul>
+      </div>
+
+      <!-- Tips Dasar Keamanan Sistem Operasi -->
+      <div class="content">
+        <h2>Tips Dasar Keamanan Sistem Operasi</h2>
+        <ul>
+          <li><strong>Gunakan Antivirus Terpercaya:</strong> Selalu instal antivirus berkualitas untuk perlindungan dasar.</li>
+          <li><strong>Aktifkan Firewall:</strong> Pastikan firewall aktif dan dikonfigurasi dengan benar.</li>
+          <li><strong>Selalu Update OS:</strong> Jangan menunda pembaruan sistem operasi.</li>
+          <li><strong>Hapus Aplikasi yang Tidak Digunakan:</strong> Kurangi potensi kerentanan dengan menghapus aplikasi yang tidak diperlukan.</li>
+          <li><strong>Batasi Hak Akses:</strong> Berikan akses minimal yang diperlukan untuk pengguna.</li>
+        </ul>
+      </div>
+
+      <!-- Tools untuk OS Security -->
+      <div class="content">
+        <h2>Tools untuk OS Security</h2>
+        <ul>
+          <li><strong>BitLocker:</strong> Alat enkripsi untuk sistem operasi Windows.</li>
+          <li><strong>SELinux:</strong> Framework keamanan untuk sistem operasi Linux.</li>
+          <li><strong>ClamAV:</strong> Antivirus open-source untuk Linux.</li>
+          <li><strong>Sysinternals Suite:</strong> Alat-alat untuk memantau dan memperbaiki masalah pada sistem operasi Windows.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>&copy; 2024 Cybersecurity Learning. All Rights Reserved.</p>
+      <p>
+        <a href="privacy.html">Privacy Policy</a> | 
+        <a href="term.html">Terms of Service</a> | 
+        <a href="contact.html">Contact</a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Navbar Toggle Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+      if (navbarBurgers.length > 0) {
+        navbarBurgers.forEach(el => {
+          el.addEventListener('click', () => {
+            const target = el.dataset.target;
+            const $target = document.getElementById(target);
+            el.classList.toggle('is-active');
+            $target.classList.toggle('is-active');
+          });
+        });
+      }
+    });
+  </script>
+</body>
+</html>

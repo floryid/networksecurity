@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Security</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar is-dark">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="index.html">Cybersecurity Learning</a>
+      <span class="navbar-burger" data-target="navbarMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
+    </div>
+    <div id="navbarMenu" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="index.html">Home</a>
+        <a class="navbar-item" href="basics.html">Dasar</a>
+        <a class="navbar-item" href="networking.html">Networking</a>
+        <a class="navbar-item" href="os-security.html">OS Security</a>
+        <a class="navbar-item" href="eth-hacking.html">Ethical Hacking</a>
+        <a class="navbar-item" href="web-security.html">Web Security</a>
+        <a class="navbar-item" href="forensics.html">Forensik</a>
+        <a class="navbar-item" href="malware.html">Malware Analysis</a>
+        <a class="navbar-item" href="resources.html">Certifications & Resources</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <section class="section">
+    <div class="container">
+      <h1 class="title">Web Security</h1>
+      <p class="subtitle">Dasar-dasar keamanan aplikasi web dan cara melindunginya dari ancaman.</p>
+
+      <!-- Pengenalan Keamanan Web -->
+      <div class="content">
+        <h2>Pengenalan Keamanan Web</h2>
+        <p>Keamanan web adalah praktik melindungi aplikasi web dari ancaman dan serangan yang dapat mengakibatkan kerugian bagi pengguna atau pemilik situs. Ancaman ini dapat berupa serangan langsung terhadap aplikasi, pengumpulan data sensitif, atau pencurian identitas.</p>
+      </div>
+
+      <!-- Ancaman Umum dalam Keamanan Web -->
+      <div class="content">
+        <h2>Ancaman Umum dalam Keamanan Web</h2>
+        <ul>
+          <li><strong>SQL Injection:</strong> Serangan yang memanfaatkan celah dalam pengolahan input ke database untuk menyisipkan kode SQL berbahaya.</li>
+          <li><strong>Cross-Site Scripting (XSS):</strong> Serangan yang memungkinkan penyerang menyisipkan skrip berbahaya ke dalam halaman web yang dilihat oleh pengguna lain.</li>
+          <li><strong>Cross-Site Request Forgery (CSRF):</strong> Serangan yang mengecoh pengguna agar melakukan aksi tidak sah di aplikasi web yang mereka autentikasi.</li>
+          <li><strong>Remote File Inclusion (RFI):</strong> Serangan yang memungkinkan penyerang menyertakan file dari server yang terkontrol ke dalam aplikasi web.</li>
+          <li><strong>Denial of Service (DoS):</strong> Serangan yang bertujuan untuk membuat layanan tidak tersedia dengan membanjiri server dengan permintaan yang berlebihan.</li>
+        </ul>
+      </div>
+
+      <!-- Praktik Terbaik untuk Keamanan Web -->
+      <div class="content">
+        <h2>Praktik Terbaik untuk Keamanan Web</h2>
+        <ul>
+          <li><strong>Validasi Input:</strong> Selalu validasi dan sanitasi semua input pengguna untuk mencegah serangan seperti SQL Injection dan XSS.</li>
+          <li><strong>Gunakan HTTPS:</strong> Enkripsi data yang ditransfer antara pengguna dan server menggunakan HTTPS untuk melindungi dari serangan Man-in-the-Middle.</li>
+          <li><strong>Penggunaan Token CSRF:</strong> Gunakan token yang unik untuk setiap sesi pengguna untuk melindungi dari serangan CSRF.</li>
+          <li><strong>Autentikasi yang Kuat:</strong> Terapkan autentikasi multi-faktor dan kebijakan kata sandi yang kuat untuk meningkatkan keamanan akses pengguna.</li>
+          <li><strong>Pembaruan Rutin:</strong> Selalu perbarui perangkat lunak dan dependensi untuk menutup celah keamanan yang diketahui.</li>
+        </ul>
+      </div>
+
+      <!-- Alat untuk Keamanan Web -->
+      <div class="content">
+        <h2>Alat untuk Keamanan Web</h2>
+        <ul>
+          <li><strong>OWASP ZAP:</strong> Alat open-source untuk melakukan pengujian penetrasi aplikasi web dan mendeteksi kerentanan.</li>
+          <li><strong>Burp Suite:</strong> Platform pengujian keamanan aplikasi web yang mencakup pemindaian, analisis, dan pengujian manual.</li>
+          <li><strong>Nikto:</strong> Pemindai web server yang membantu menemukan kerentanan dan konfigurasi yang salah.</li>
+          <li><strong>Acunetix:</strong> Alat pemindaian otomatis untuk mengidentifikasi kerentanan di aplikasi web.</li>
+          <li><strong>SQLMap:</strong> Alat open-source yang digunakan untuk menguji dan mengeksploitasi kerentanan SQL Injection.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>&copy; 2024 Cybersecurity Learning. All Rights Reserved.</p>
+      <p>
+        <a href="privacy.html">Privacy Policy</a> | 
+        <a href="term.html">Terms of Service</a> | 
+        <a href="contact.html">Contact</a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Navbar Toggle Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+      if (navbarBurgers.length > 0) {
+        navbarBurgers.forEach(el => {
+          el.addEventListener('click', () => {
+            const target = el.dataset.target;
+            const $target = document.getElementById(target);
+            el.classList.toggle('is-active');
+            $target.classList.toggle('is-active');
+          });
+        });
+      }
+    });
+  </script>
+</body>
+</html>

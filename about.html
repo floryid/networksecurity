@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Nofrinto Flory</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar is-dark">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="index.html">Cybersecurity Learning</a>
+      <span class="navbar-burger" data-target="navbarMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
+    </div>
+
+    <div id="navbarMenu" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="index.html">Home</a>
+        <a class="navbar-item" href="basics.html">Dasar</a>
+        <a class="navbar-item" href="networking.html">Networking</a>
+        <a class="navbar-item" href="os-security.html">OS Security</a>
+        <a class="navbar-item" href="eth-hacking.html">Ethical Hacking</a>
+        <a class="navbar-item" href="web-security.html">Web Security</a>
+        <a class="navbar-item" href="forensics.html">Forensik</a>
+        <a class="navbar-item" href="malware.html">Malware Analysis</a>
+        <a class="navbar-item" href="resources.html">Certifications & Resources</a>
+        <a class="navbar-item" href="contact.html">Contact</a>
+        <a class="navbar-item" href="privacy.html">Kebijakan Privasi</a>
+        <a class="navbar-item" href="term.html">Syarat dan Ketentuan</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <section class="section">
+    <div class="container">
+      <h1 class="title">Tentang Nofrinto Flory</h1>
+      <h2 class="subtitle">Profil dan Pengalaman</h2>
+
+      <div class="content">
+        <p>
+          Nofrinto Flory adalah seorang profesional di bidang cybersecurity dengan pengalaman luas dalam berbagai aspek keamanan siber. Beliau memiliki ketertarikan yang mendalam dalam melindungi data dan sistem informasi dari ancaman yang semakin meningkat.
+        </p>
+        <p>
+          Dengan latar belakang pendidikan yang solid dan berbagai sertifikasi di bidang keamanan siber, Nofrinto telah bekerja pada berbagai proyek yang berfokus pada penguatan keamanan jaringan, analisis malware, dan pengembangan kebijakan keamanan.
+        </p>
+        <p>
+          Selain itu, Nofrinto juga aktif dalam komunitas cybersecurity, berbagi pengetahuan dan pengalaman melalui seminar, workshop, dan platform online. Beliau percaya bahwa pendidikan dan kesadaran adalah kunci untuk menciptakan lingkungan yang aman bagi semua pengguna internet.
+        </p>
+      </div>
+
+      <h3 class="title is-4">Kontak</h3>
+      <div class="content">
+        <p>
+          Untuk informasi lebih lanjut atau kolaborasi, Anda dapat menghubungi Nofrinto Flory melalui email di <a href="mailto:nofrintoflory@example.com">nofrintoflory@example.com</a>.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>&copy; 2024 Cybersecurity Learning. All Rights Reserved.</p>
+      <p>
+        <a href="#">Privacy Policy</a> | 
+        <a href="#">Terms of Service</a> | 
+        <a href="contact.html">Contact</a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Navbar Toggle Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+      if (navbarBurgers.length > 0) {
+        navbarBurgers.forEach(el => {
+          el.addEventListener('click', () => {
+            const target = el.dataset.target;
+            const $target = document.getElementById(target);
+            el.classList.toggle('is-active');
+            $target.classList.toggle('is-active');
+          });
+        });
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Security</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar is-dark">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="index.html">Cybersecurity Learning</a>
+      <span class="navbar-burger" data-target="navbarMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
+    </div>
+
+    <div id="navbarMenu" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="index.html">Home</a>
+        <a class="navbar-item" href="basics.html">Dasar</a>
+        <a class="navbar-item" href="networking.html">Networking</a>
+        <a class="navbar-item" href="os-security.html">OS Security</a>
+        <a class="navbar-item" href="eth-hacking.html">Ethical Hacking</a>
+        <a class="navbar-item" href="web-security.html">Web Security</a>
+        <a class="navbar-item" href="forensics.html">Forensik</a>
+        <a class="navbar-item" href="malware.html">Malware Analysis</a>
+        <a class="navbar-item" href="resources.html">Certifications & Resources</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <section class="section">
+    <div class="container">
+      <h1 class="title">Web Security</h1>
+      <p class="subtitle">Dasar keamanan aplikasi web dan teknik untuk melindungi data dari serangan online.</p>
+
+      <!-- Pentingnya Keamanan Web -->
+      <div class="content">
+        <h2>Pentingnya Keamanan Web</h2>
+        <p>Keamanan web bertujuan untuk melindungi aplikasi web dan data pengguna dari serangan berbahaya. Karena banyak bisnis dan layanan yang menggunakan aplikasi web, menjaga keamanan data pelanggan dan transaksi sangat penting.</p>
+        <ul>
+          <li><strong>Perlindungan Data Pengguna:</strong> Mencegah akses tidak sah dan pencurian data pengguna.</li>
+          <li><strong>Integritas Aplikasi:</strong> Menjaga agar aplikasi tetap berjalan dengan aman dan tanpa gangguan.</li>
+          <li><strong>Kepercayaan Pengguna:</strong> Membangun kepercayaan dengan menjaga keamanan dan privasi data mereka.</li>
+        </ul>
+      </div>
+
+      <!-- Ancaman Keamanan Web Umum -->
+      <div class="content">
+        <h2>Ancaman Keamanan Web Umum</h2>
+        <ul>
+          <li><strong>SQL Injection:</strong> Serangan yang memanipulasi query SQL untuk mengakses atau merusak data dalam database.</li>
+          <li><strong>Cross-Site Scripting (XSS):</strong> Serangan yang menyisipkan skrip berbahaya ke halaman web untuk mencuri data pengguna.</li>
+          <li><strong>Cross-Site Request Forgery (CSRF):</strong> Serangan yang memaksa pengguna untuk melakukan aksi yang tidak mereka sadari.</li>
+          <li><strong>Session Hijacking:</strong> Pengambilalihan sesi pengguna untuk mengakses akun atau data mereka.</li>
+          <li><strong>Brute Force Attack:</strong> Metode mencoba berbagai kombinasi password hingga menemukan yang benar.</li>
+        </ul>
+      </div>
+
+      <!-- Praktik Terbaik untuk Keamanan Web -->
+      <div class="content">
+        <h2>Praktik Terbaik untuk Keamanan Web</h2>
+        <ul>
+          <li><strong>Validasi Input:</strong> Pastikan semua data yang diterima aplikasi telah divalidasi untuk mencegah serangan seperti SQL Injection dan XSS.</li>
+          <li><strong>Penggunaan HTTPS:</strong> Pastikan koneksi antara server dan pengguna aman dengan menggunakan HTTPS.</li>
+          <li><strong>Pengelolaan Sesi:</strong> Terapkan sesi yang aman dan gunakan waktu kedaluwarsa untuk mengurangi risiko session hijacking.</li>
+          <li><strong>Pengaturan Akses:</strong> Batasi akses ke bagian-bagian aplikasi sesuai dengan peran pengguna.</li>
+          <li><strong>Enkripsi Data Sensitif:</strong> Enkripsi data penting seperti password sebelum disimpan di database.</li>
+        </ul>
+      </div>
+
+      <!-- Tools untuk Keamanan Web -->
+      <div class="content">
+        <h2>Tools untuk Keamanan Web</h2>
+        <ul>
+          <li><strong>OWASP ZAP:</strong> Alat pengujian penetrasi open-source untuk aplikasi web yang membantu mendeteksi kerentanan.</li>
+          <li><strong>Burp Suite:</strong> Suite pengujian keamanan web yang komprehensif untuk menemukan dan mengeksploitasi celah keamanan.</li>
+          <li><strong>Nikto:</strong> Alat pemindai web server yang mendeteksi kerentanan pada konfigurasi server.</li>
+          <li><strong>SQLMap:</strong> Alat otomatis untuk mendeteksi dan mengeksploitasi serangan SQL Injection.</li>
+          <li><strong>Acunetix:</strong> Pemindai keamanan web yang mendeteksi celah seperti XSS dan CSRF.</li>
+        </ul>
+      </div>
+
+      <!-- Tips untuk Memulai Belajar Keamanan Web -->
+      <div class="content">
+        <h2>Tips untuk Memulai Belajar Keamanan Web</h2>
+        <ul>
+          <li><strong>Kenali Struktur Aplikasi Web:</strong> Pahami dasar-dasar HTML, CSS, JavaScript, dan server-side programming seperti PHP atau Python.</li>
+          <li><strong>Gunakan Lab Uji Coba:</strong> Cobalah uji keamanan di lab seperti OWASP WebGoat atau DVWA (Damn Vulnerable Web Application) untuk latihan.</li>
+          <li><strong>Pahami OWASP Top Ten:</strong> Pelajari sepuluh ancaman keamanan aplikasi web yang paling umum dari OWASP.</li>
+          <li><strong>Berlatih Menggunakan Tools:</strong> Latihan dengan alat seperti Burp Suite dan ZAP akan membantu memahami cara mendeteksi kerentanan.</li>
+          <li><strong>Terus Belajar dan Update:</strong> Dunia keamanan web selalu berkembang, jadi penting untuk terus belajar dan mengikuti perkembangan terbaru.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>&copy; 2024 Cybersecurity Learning. All Rights Reserved.</p>
+      <p>
+        <a href="privacy.html">Privacy Policy</a> | 
+        <a href="term.html">Terms of Service</a> | 
+        <a href="contact.html">Contact</a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Navbar Toggle Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+      if (navbarBurgers.length > 0) {
+        navbarBurgers.forEach(el => {
+          el.addEventListener('click', () => {
+            const target = el.dataset.target;
+            const $target = document.getElementById(target);
+            el.classList.toggle('is-active');
+            $target.classList.toggle('is-active');
+          });
+        });
+      }
+    });
+  </script>
+</body>
+</html>

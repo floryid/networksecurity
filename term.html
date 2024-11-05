@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Syarat dan Ketentuan Layanan</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar is-dark">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="index.html">Cybersecurity Learning</a>
+      <span class="navbar-burger" data-target="navbarMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
+    </div>
+
+    <div id="navbarMenu" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="index.html">Home</a>
+        <a class="navbar-item" href="basics.html">Dasar</a>
+        <a class="navbar-item" href="networking.html">Networking</a>
+        <a class="navbar-item" href="os-security.html">OS Security</a>
+        <a class="navbar-item" href="eth-hacking.html">Ethical Hacking</a>
+        <a class="navbar-item" href="web-security.html">Web Security</a>
+        <a class="navbar-item" href="forensics.html">Forensik</a>
+        <a class="navbar-item" href="malware.html">Malware Analysis</a>
+        <a class="navbar-item" href="resources.html">Certifications & Resources</a>
+        <a class="navbar-item" href="contact.html">Contact</a>
+        <a class="navbar-item" href="privacy-policy.html">Kebijakan Privasi</a>
+        <a class="navbar-item" href="terms-of-service.html">Syarat dan Ketentuan</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <section class="section">
+    <div class="container">
+      <h1 class="title">Syarat dan Ketentuan Layanan</h1>
+      <p class="subtitle">Harap baca syarat dan ketentuan berikut dengan seksama sebelum menggunakan layanan kami.</p>
+
+      <!-- Informasi Syarat dan Ketentuan -->
+      <div class="content">
+        <h2>1. Penerimaan Syarat</h2>
+        <p>Dengan mengakses atau menggunakan situs ini, Anda setuju untuk terikat oleh syarat dan ketentuan layanan ini.</p>
+
+        <h2>2. Modifikasi Syarat</h2>
+        <p>Kami berhak untuk mengubah syarat dan ketentuan ini kapan saja. Perubahan akan berlaku segera setelah diposting di situs. Anda disarankan untuk memeriksa halaman ini secara berkala untuk tetap mendapatkan informasi terkini.</p>
+
+        <h2>3. Penggunaan Situs</h2>
+        <p>Anda setuju untuk menggunakan situs ini hanya untuk tujuan yang sah dan sesuai dengan semua hukum yang berlaku. Anda dilarang menggunakan situs ini dengan cara yang dapat merugikan atau mengganggu akses orang lain.</p>
+
+        <h2>4. Hak Kekayaan Intelektual</h2>
+        <p>Semua konten di situs ini, termasuk tetapi tidak terbatas pada teks, gambar, dan logo, dilindungi oleh hak cipta dan hak kekayaan intelektual lainnya. Anda tidak diperkenankan untuk menyalin, mendistribusikan, atau memodifikasi konten tersebut tanpa izin tertulis dari pemilik.</p>
+
+        <h2>5. Tautan ke Pihak Ketiga</h2>
+        <p>Situs kami mungkin berisi tautan ke situs lain yang bukan milik kami. Kami tidak bertanggung jawab atas konten atau praktik privasi situs tersebut.</p>
+
+        <h2>6. Pembatasan Tanggung Jawab</h2>
+        <p>Kami tidak bertanggung jawab atas kerugian atau kerusakan yang timbul dari penggunaan atau ketidakmampuan untuk menggunakan situs ini.</p>
+
+        <h2>7. Hukum yang Berlaku</h2>
+        <p>Syarat dan ketentuan ini diatur oleh dan ditafsirkan sesuai dengan hukum yang berlaku di negara kami.</p>
+
+        <h2>8. Kontak Kami</h2>
+        <p>Jika Anda memiliki pertanyaan mengenai syarat dan ketentuan ini, silakan hubungi kami melalui formulir kontak di halaman kontak.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>&copy; 2024 Cybersecurity Learning. All Rights Reserved.</p>
+      <p>
+        <a href="privacy.html">Privacy Policy</a> | 
+        <a href="term.html">Terms of Service</a> | 
+        <a href="contact.html">Contact</a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Navbar Toggle Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+      if (navbarBurgers.length > 0) {
+        navbarBurgers.forEach(el => {
+          el.addEventListener('click', () => {
+            const target = el.dataset.target;
+            const $target = document.getElementById(target);
+            el.classList.toggle('is-active');
+            $target.classList.toggle('is-active');
+          });
+        });
+      }
+    });
+  

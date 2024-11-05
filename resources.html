@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Certifications & Resources</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar is-dark">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="index.html">Cybersecurity Learning</a>
+      <span class="navbar-burger" data-target="navbarMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
+    </div>
+
+    <div id="navbarMenu" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="index.html">Home</a>
+        <a class="navbar-item" href="basics.html">Dasar</a>
+        <a class="navbar-item" href="networking.html">Networking</a>
+        <a class="navbar-item" href="os-security.html">OS Security</a>
+        <a class="navbar-item" href="eth-hacking.html">Ethical Hacking</a>
+        <a class="navbar-item" href="web-security.html">Web Security</a>
+        <a class="navbar-item" href="forensics.html">Forensik</a>
+        <a class="navbar-item" href="malware.html">Malware Analysis</a>
+        <a class="navbar-item" href="resources.html">Certifications & Resources</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <section class="section">
+    <div class="container">
+      <h1 class="title">Certifications & Resources</h1>
+      <p class="subtitle">Panduan sertifikasi dan sumber daya tambahan untuk mendalami cybersecurity.</p>
+
+      <!-- Sertifikasi Cybersecurity -->
+      <div class="content">
+        <h2>Sertifikasi Cybersecurity</h2>
+        <p>Sertifikasi di bidang cybersecurity membantu meningkatkan keterampilan, menunjukkan kompetensi, dan dapat membuka peluang karier. Berikut adalah beberapa sertifikasi populer di bidang ini:</p>
+        <ul>
+          <li><strong>CompTIA Security+:</strong> Sertifikasi tingkat dasar yang menguji konsep keamanan jaringan, manajemen risiko, dan respons terhadap ancaman.</li>
+          <li><strong>Certified Ethical Hacker (CEH):</strong> Sertifikasi untuk memahami metode hacking etis dan melindungi sistem dari ancaman.</li>
+          <li><strong>Certified Information Systems Security Professional (CISSP):</strong> Sertifikasi tingkat lanjut untuk para profesional yang berfokus pada keamanan sistem informasi.</li>
+          <li><strong>Certified Information Security Manager (CISM):</strong> Sertifikasi untuk para manajer yang ingin memahami keamanan informasi dan manajemen risiko.</li>
+          <li><strong>Certified Information Systems Auditor (CISA):</strong> Sertifikasi untuk auditor yang bertanggung jawab dalam audit, kontrol, dan keamanan sistem informasi.</li>
+          <li><strong>Offensive Security Certified Professional (OSCP):</strong> Sertifikasi teknis untuk individu yang ingin menunjukkan kemampuan dalam penetration testing.</li>
+        </ul>
+      </div>
+
+      <!-- Sumber Daya Belajar Tambahan -->
+      <div class="content">
+        <h2>Sumber Daya Belajar Tambahan</h2>
+        <p>Berikut adalah beberapa sumber daya belajar yang bermanfaat untuk mendalami cybersecurity:</p>
+        <ul>
+          <li><strong>Cybrary:</strong> Platform pembelajaran online dengan berbagai kursus gratis dan berbayar dalam bidang cybersecurity.</li>
+          <li><strong>TryHackMe:</strong> Situs web interaktif yang menawarkan lab dan ruang untuk belajar hacking secara praktis.</li>
+          <li><strong>Hack The Box:</strong> Platform pembelajaran berbasis tantangan yang memungkinkan pengguna untuk mengasah keterampilan penetration testing.</li>
+          <li><strong>OWASP:</strong> Proyek terbuka yang menyediakan panduan, dokumentasi, dan alat terkait keamanan aplikasi web.</li>
+          <li><strong>SANS Institute:</strong> Organisasi pelatihan cybersecurity yang menawarkan kursus dan sertifikasi dengan berbagai spesialisasi.</li>
+          <li><strong>Reddit r/cybersecurity:</strong> Forum komunitas untuk berbagi informasi, berita, dan wawasan tentang cybersecurity.</li>
+        </ul>
+      </div>
+
+      <!-- Tips Mengambil Sertifikasi -->
+      <div class="content">
+        <h2>Tips untuk Mengambil Sertifikasi</h2>
+        <ul>
+          <li><strong>Pelajari Materi yang Tepat:</strong> Setiap sertifikasi memiliki fokus yang berbeda, jadi pastikan mempelajari materi yang sesuai.</li>
+          <li><strong>Ikuti Kursus Persiapan:</strong> Banyak sertifikasi yang memiliki kursus persiapan yang membantu memperdalam materi dan simulasi ujian.</li>
+          <li><strong>Gunakan Buku dan Video:</strong> Selain kursus, gunakan buku, video, dan sumber referensi lain untuk melengkapi pemahaman.</li>
+          <li><strong>Praktikkan Secara Langsung:</strong> Mempraktikkan pengetahuan di lab atau platform simulasi akan memperkuat pemahaman dan keterampilan teknis.</li>
+          <li><strong>Jadwalkan Waktu Belajar:</strong> Buat jadwal belajar yang konsisten untuk menjaga alur belajar sebelum ujian.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>&copy; 2024 Cybersecurity Learning. All Rights Reserved.</p>
+      <p>
+        <a href="privacy.html">Privacy Policy</a> | 
+        <a href="term.html">Terms of Service</a> | 
+        <a href="contact.html">Contact</a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Navbar Toggle Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+      if (navbarBurgers.length > 0) {
+        navbarBurgers.forEach(el => {
+          el.addEventListener('click', () => {
+            const target = el.dataset.target;
+            const $target = document.getElementById(target);
+            el.classList.toggle('is-active');
+            $target.classList.toggle('is-active');
+          });
+        });
+      }
+    });
+  </script>
+</body>
+</html>

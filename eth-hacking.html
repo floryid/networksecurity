@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ethical Hacking</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar is-dark">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="index.html">Cybersecurity Learning</a>
+      <span class="navbar-burger" data-target="navbarMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
+    </div>
+
+    <div id="navbarMenu" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="index.html">Home</a>
+        <a class="navbar-item" href="basics.html">Dasar</a>
+        <a class="navbar-item" href="networking.html">Networking</a>
+        <a class="navbar-item" href="os-security.html">OS Security</a>
+        <a class="navbar-item" href="eth-hacking.html">Ethical Hacking</a>
+        <a class="navbar-item" href="web-security.html">Web Security</a>
+        <a class="navbar-item" href="forensics.html">Forensik</a>
+        <a class="navbar-item" href="malware.html">Malware Analysis</a>
+        <a class="navbar-item" href="resources.html">Certifications & Resources</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <section class="section">
+    <div class="container">
+      <h1 class="title">Ethical Hacking</h1>
+      <p class="subtitle">Memahami dasar ethical hacking dan peranannya dalam menjaga keamanan siber.</p>
+
+      <!-- Definisi Ethical Hacking -->
+      <div class="content">
+        <h2>Definisi Ethical Hacking</h2>
+        <p>Ethical Hacking adalah proses mengidentifikasi dan mengatasi kelemahan dalam sistem komputer dan jaringan dengan izin dari pemiliknya. Berbeda dengan hacking ilegal, ethical hacking dilakukan secara sah untuk memperkuat keamanan.</p>
+        <ul>
+          <li><strong>White Hat:</strong> Hacker etis yang bekerja untuk melindungi keamanan sistem.</li>
+          <li><strong>Black Hat:</strong> Hacker yang melanggar hukum dan menyerang sistem tanpa izin.</li>
+          <li><strong>Grey Hat:</strong> Hacker yang berada di antara white hat dan black hat, kadang melanggar hukum untuk mengekspos kerentanan.</li>
+        </ul>
+      </div>
+
+      <!-- Tujuan Ethical Hacking -->
+      <div class="content">
+        <h2>Tujuan Ethical Hacking</h2>
+        <p>Ethical hacking bertujuan untuk melindungi sistem dari potensi ancaman dengan cara:</p>
+        <ul>
+          <li><strong>Identifikasi Kelemahan:</strong> Menemukan celah keamanan sebelum penyerang lain menemukannya.</li>
+          <li><strong>Pengujian Penetrasi:</strong> Menguji ketahanan sistem terhadap serangan untuk mengetahui respons sistem.</li>
+          <li><strong>Peningkatan Keamanan:</strong> Mengidentifikasi area yang perlu ditingkatkan untuk mencegah eksploitasi.</li>
+        </ul>
+      </div>
+
+      <!-- Teknik Dasar Ethical Hacking -->
+      <div class="content">
+        <h2>Teknik Dasar Ethical Hacking</h2>
+        <ul>
+          <li><strong>Reconnaissance:</strong> Pengumpulan informasi mengenai target, sering disebut juga sebagai informasi pasif.</li>
+          <li><strong>Scanning:</strong> Teknik aktif untuk menemukan port yang terbuka dan kerentanan dalam sistem.</li>
+          <li><strong>Exploitation:</strong> Memanfaatkan celah keamanan untuk mengakses sistem, namun dalam ethical hacking ini dilakukan untuk mengidentifikasi kelemahan.</li>
+          <li><strong>Maintaining Access:</strong> Teknik untuk mempertahankan akses pada sistem untuk pengujian lebih lanjut.</li>
+          <li><strong>Covering Tracks:</strong> Menghapus jejak aktivitas pengujian, meskipun dalam ethical hacking, proses ini dilakukan secara transparan.</li>
+        </ul>
+      </div>
+
+      <!-- Tools untuk Ethical Hacking -->
+      <div class="content">
+        <h2>Tools untuk Ethical Hacking</h2>
+        <ul>
+          <li><strong>Metasploit:</strong> Platform untuk pengujian penetrasi yang membantu dalam eksploitasi celah keamanan.</li>
+          <li><strong>Nmap:</strong> Alat untuk pemindaian jaringan yang digunakan untuk menemukan perangkat dan port yang terbuka.</li>
+          <li><strong>Wireshark:</strong> Alat analisis jaringan untuk memonitor dan menangkap lalu lintas jaringan.</li>
+          <li><strong>John the Ripper:</strong> Password cracker untuk mengidentifikasi password yang lemah.</li>
+          <li><strong>Burp Suite:</strong> Alat pengujian penetrasi untuk aplikasi web yang populer dalam mengidentifikasi kerentanan.</li>
+        </ul>
+      </div>
+
+      <!-- Tips untuk Belajar Ethical Hacking -->
+      <div class="content">
+        <h2>Tips untuk Belajar Ethical Hacking</h2>
+        <ul>
+          <li><strong>Mulailah dengan dasar-dasar jaringan:</strong> Pemahaman mengenai jaringan sangat penting.</li>
+          <li><strong>Belajar kode:</strong> Keterampilan dalam bahasa pemrograman seperti Python dapat membantu dalam pengembangan alat dan eksploitasi.</li>
+          <li><strong>Latihan dengan lab pengujian:</strong> Gunakan lab pengujian virtual atau platform seperti TryHackMe atau Hack The Box.</li>
+          <li><strong>Pahami etika:</strong> Pastikan untuk selalu mendapatkan izin sebelum melakukan pengujian keamanan.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>&copy; 2024 Cybersecurity Learning. All Rights Reserved.</p>
+      <p>
+        <a href="privacy.html">Privacy Policy</a> | 
+        <a href="term.html">Terms of Service</a> | 
+        <a href="contact.html">Contact</a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Navbar Toggle Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+      if (navbarBurgers.length > 0) {
+        navbarBurgers.forEach(el => {
+          el.addEventListener('click', () => {
+            const target = el.dataset.target;
+            const $target = document.getElementById(target);
+            el.classList.toggle('is-active');
+            $target.classList.toggle('is-active');
+          });
+        });
+      }
+    });
+  </script>
+</body>
+</html>

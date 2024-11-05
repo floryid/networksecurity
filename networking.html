@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dasar Networking</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar is-dark">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="index.html">Cybersecurity Learning</a>
+      <span class="navbar-burger" data-target="navbarMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
+    </div>
+
+    <div id="navbarMenu" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="index.html">Home</a>
+        <a class="navbar-item" href="basics.html">Dasar</a>
+        <a class="navbar-item" href="networking.html">Networking</a>
+        <a class="navbar-item" href="os-security.html">OS Security</a>
+        <a class="navbar-item" href="eth-hacking.html">Ethical Hacking</a>
+        <a class="navbar-item" href="web-security.html">Web Security</a>
+        <a class="navbar-item" href="forensics.html">Forensik</a>
+        <a class="navbar-item" href="malware.html">Malware Analysis</a>
+        <a class="navbar-item" href="resources.html">Certifications & Resources</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <section class="section">
+    <div class="container">
+      <h1 class="title">Dasar Networking</h1>
+      <p class="subtitle">Pemahaman dasar mengenai jaringan komputer dan konsep penting dalam networking.</p>
+
+      <!-- Konsep Dasar Jaringan -->
+      <div class="content">
+        <h2>Konsep Dasar Jaringan</h2>
+        <p>Networking adalah proses menghubungkan komputer dan perangkat lainnya untuk berbagi data dan sumber daya. Dalam cybersecurity, pemahaman tentang jaringan sangat penting untuk mendeteksi dan mengatasi serangan yang mungkin terjadi.</p>
+        <ul>
+          <li><strong>LAN (Local Area Network):</strong> Jaringan yang mencakup area lokal, seperti dalam satu gedung atau kantor.</li>
+          <li><strong>WAN (Wide Area Network):</strong> Jaringan yang mencakup area yang lebih luas, seperti negara atau benua.</li>
+          <li><strong>Protocol:</strong> Aturan komunikasi antar perangkat, seperti TCP/IP dan UDP.</li>
+          <li><strong>Topologi Jaringan:</strong> Struktur fisik atau logis dari jaringan, misalnya star, bus, ring, dan mesh.</li>
+        </ul>
+      </div>
+
+      <!-- TCP/IP dan OSI Model -->
+      <div class="content">
+        <h2>Model TCP/IP dan OSI</h2>
+        <p>Kedua model ini adalah standar yang digunakan untuk memahami bagaimana data diproses dan dikirim dalam jaringan.</p>
+        <ul>
+          <li><strong>Model TCP/IP:</strong> Model ini terdiri dari empat layer: Application, Transport, Internet, dan Network Interface.</li>
+          <li><strong>Model OSI:</strong> Model OSI memiliki tujuh layer: Physical, Data Link, Network, Transport, Session, Presentation, dan Application.</li>
+        </ul>
+      </div>
+
+      <!-- IP Addressing dan Subnetting -->
+      <div class="content">
+        <h2>IP Addressing dan Subnetting</h2>
+        <p><strong>IP Addressing</strong> adalah cara untuk mengidentifikasi perangkat di jaringan dengan alamat unik, seperti <code>192.168.0.1</code>. Terdapat dua jenis IP address:</p>
+        <ul>
+          <li><strong>IPv4:</strong> Menggunakan alamat 32-bit, contohnya <code>192.168.0.1</code></li>
+          <li><strong>IPv6:</strong> Menggunakan alamat 128-bit, contohnya <code>2001:0db8:85a3:0000:0000:8a2e:0370:7334</code></li>
+        </ul>
+        <p><strong>Subnetting</strong> adalah teknik untuk membagi jaringan besar menjadi sub-jaringan yang lebih kecil, memungkinkan pengelolaan alamat IP yang lebih efisien.</p>
+      </div>
+
+      <!-- Tools dalam Networking -->
+      <div class="content">
+        <h2>Tools dalam Networking</h2>
+        <ul>
+          <li><strong>Wireshark:</strong> Alat untuk memonitor dan menganalisis lalu lintas jaringan.</li>
+          <li><strong>Nmap:</strong> Digunakan untuk pemindaian jaringan dan menemukan perangkat serta port yang terbuka.</li>
+          <li><strong>Ping:</strong> Perintah sederhana untuk memeriksa konektivitas antar perangkat.</li>
+          <li><strong>Traceroute:</strong> Alat untuk melacak jalur yang dilalui paket dalam jaringan menuju tujuan.</li>
+        </ul>
+      </div>
+
+      <!-- Tips untuk Mempelajari Networking -->
+      <div class="content">
+        <h2>Tips untuk Mempelajari Networking</h2>
+        <ul>
+          <li>Mulailah dengan memahami dasar-dasar model OSI dan TCP/IP.</li>
+          <li>Pelajari cara membaca dan menggunakan alamat IP, serta konsep subnetting.</li>
+          <li>Cobalah menggunakan alat seperti Wireshark dan Nmap untuk mendapatkan pengalaman langsung.</li>
+          <li>Eksplorasi berbagai topologi jaringan dan praktikkan dengan membangun jaringan sederhana.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>&copy; 2024 Cybersecurity Learning. All Rights Reserved.</p>
+      <p>
+        <a href="privacy.html">Privacy Policy</a> | 
+        <a href="term.html">Terms of Service</a> | 
+        <a href="contact.html">Contact</a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Navbar Toggle Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+      if (navbarBurgers.length > 0) {
+        navbarBurgers.forEach(el => {
+          el.addEventListener('click', () => {
+            const target = el.dataset.target;
+            const $target = document.getElementById(target);
+            el.classList.toggle('is-active');
+            $target.classList.toggle('is-active');
+          });
+        });
+      }
+    });
+  </script>
+</body>
+</html>
